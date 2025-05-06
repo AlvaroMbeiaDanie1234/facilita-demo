@@ -1,0 +1,49 @@
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-background {
+    background-image: url('../../images/gallery/bg.jpeg'); /* coloque sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+
+
+  .vantagem-item {
+    border: 1px solid orange;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .vantagem-item:hover {
+    background-color: orange;
+    color: white;
+    cursor: default;
+  }
+  
+
+
+  /* Efeito hover moderno nas imagens circulares */
+.hero-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  

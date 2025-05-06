@@ -1,0 +1,54 @@
+/* src/components/Networks.css */
+.networks-section {
+    background-color: #111;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+  }
+
+
+  
+  .networks-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .networks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cards maiores, mas flexíveis */
+    gap: 20px; /* Reduz o espaço entre os cards */
+    justify-content: center; /* Centraliza as colunas */
+    max-width: 1200px; /* Limita largura total */
+    margin: 0 auto; /* Centraliza o grid */
+  }
+  
+
+
+  
+  
+  .network-card {
+    background-color: #000;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .network-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .network-card h4 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .network-card p {
+    margin-top: 5px;
+    color: #d1d5db;
+  }
+  
