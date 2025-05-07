@@ -1,4 +1,4 @@
-/* src/components/Networks.css */
+/* src/components/styles/networks.css */
 .networks-section {
     background-color: #111;
     padding: 50px 20px;
@@ -6,8 +6,6 @@
     color: white;
     max-width: 100%;
   }
-
-
   
   .networks-title {
     font-size: 32px;
@@ -17,16 +15,12 @@
   
   .networks-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cards maiores, mas flexíveis */
-    gap: 20px; /* Reduz o espaço entre os cards */
-    justify-content: center; /* Centraliza as colunas */
-    max-width: 1200px; /* Limita largura total */
-    margin: 0 auto; /* Centraliza o grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  
-
-
-  
   
   .network-card {
     background-color: #000;
@@ -34,11 +28,13 @@
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
   }
   
   .network-card:hover {
     transform: translateY(-5px);
+    border-color: var(--border-color);
   }
   
   .network-card h4 {

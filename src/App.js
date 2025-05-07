@@ -7,6 +7,7 @@ import Hero from './components/hero';
 import facilitaLogo from '../src/images/logo192.png'; // Substitua pelo seu logo real
 import Networks from './components/networks';
 import Footer from './components/footer';
+import Galeria from './components/gallery';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -26,7 +27,9 @@ function App() {
       <Header />
       <Hero />
       <Networks/>
+      <Galeria/>
       <Footer/>
+
 
       {/* Botão flutuante */}
       <a onClick={toggleModal} className="floating-btn" aria-label="WhatsApp">
