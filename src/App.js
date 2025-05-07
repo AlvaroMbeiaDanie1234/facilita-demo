@@ -8,6 +8,7 @@ import facilitaLogo from '../src/images/logo192.png'; // Substitua pelo seu logo
 import Networks from './components/networks';
 import Footer from './components/footer';
 import Galeria from './components/gallery';
+import Vantagens from './components/vantagens';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <Vantagens/>
       <Networks/>
       <Galeria/>
       <Footer/>
